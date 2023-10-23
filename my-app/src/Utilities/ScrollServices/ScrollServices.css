@@ -1,0 +1,31 @@
+.ToTop{
+    .display-conditionally {
+        display: none;
+      }
+      
+      .scrollState-true .display-conditionally {
+        display: block;
+      }
+      
+      .scrollState-false .display-conditionally {
+        display: none;
+      }
+  position: fixed;
+  cursor: pointer;
+  z-index: 10;
+  bottom: 1rem;
+  right: 2rem;
+  border-radius: 2rem;
+  background: #f9c74f;
+  padding: 1rem 1.15rem;
+  svg {
+    transition: 0.6s ease-in-out;
+    color: white;
+    font-size: 1.5rem;
+  }
+  &:hover {
+    svg {
+      transform: scale(1.8);
+    }
+  }
+}
